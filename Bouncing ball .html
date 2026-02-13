@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bouncing Valentine Ball</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+    overflow:hidden;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Ball Design */
+.ball{
+    width:200px;
+    height:200px;
+    background: radial-gradient(circle at 30% 30%, #ff4b5c, #b3003c);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    padding:20px;
+    box-shadow:0 20px 30px rgba(0,0,0,0.3);
+    position:absolute;
+
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Bounce Animation */
+@keyframes bounce{
+    0%   { top:0; }
+    50%  { top:60vh; }
+    100% { top:0; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="ball">
+❤️ Happy<br>
+Valentine's<br>
+Day ❤️
+</div>
+
+</body>
+</html>
